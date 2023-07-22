@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e90e6a33cf7497d38396fdd58615220&libraries=services"
+    ></script>
+
+    <title>영진직업전문학교</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="w-full flex justify-between items-center h-20 shadow-sm border-b border-neutral-300"
+      >
+        <div class="flex space-x-8">
+          <!-- 로고 -->
+          <div class="w-40 flex justify-center">
+            <img src="./asset//png/logo.png" alt="logo" class="w-28" />
+          </div>
+          <ul class="flex space-x-8">
+            <a href="/index.html?city=대구광역시"><li class="cursor-pointer" id="menu1">대구광역시</li></a>
+            <a href="/index.html?city=경상북도"><li class="cursor-pointer" id="menu2">경상북도</li></a>
+            <a href="/index.html?city=경상남도"><li class="cursor-pointer" id="menu3">경상남도</li></a>
+            <a href="/index.html?city=부산광역시"><li class="cursor-pointer" id="menu4">부산광역시</li></a>
+            <a href="/index.html?city=경기도"><li class="cursor-pointer" id="menu4">경기도</li></a>
+            <a href="/index.html?city=서울특별시"><li class="cursor-pointer" id="menu4">서울특별시</li></a>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <div class="w-full h-[calc(100vh-80px)]" id="map"></ㅇ>
+    </main>
+		<script src="./js/apiData.js"></script>
+		<script src="./js/map.js"></script>
+  </body>
+</html>
